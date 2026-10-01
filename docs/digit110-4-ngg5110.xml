@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="bookertschema.rnc" type="application/relax-ng-compact-syntax"?>
 <body>
     <metadata>
         <title>BALLAD OF BOOKER T.</title> by <author>Langston Hughes</author></metadata>

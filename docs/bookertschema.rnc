@@ -1,0 +1,27 @@
+start = body
+
+body = element body {mixed{metadata | poem}*}
+
+metadata = element metadata {mixed{title | author | publication_info | source}*}
+
+poem = element poem {sent+}
+
+sent = element sent {n, line+}
+
+line = element line {n, mixed{name*}}
+
+name = element name {text}
+
+n = attribute n {xsd:integer}
+
+title = element title {text}
+
+author = element author {text}
+
+publication_info = element publication_info {mixed{place, date}*}
+
+date = element date {text}
+
+place = element place {text}
+
+source = element source {mixed{title*, place*, date*}*}
